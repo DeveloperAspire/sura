@@ -12,6 +12,7 @@
 }
 .info h1{
       margin-right: 2rem;
+      color:hsl(255, 11%, 22%);
 }
 .info ul{
       margin: 0;
