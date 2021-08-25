@@ -1,12 +1,13 @@
-
+import React from 'react'
+import Header from './components/Layout/Header'
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-     
+    <React.Fragment>
+     <Header/>
       
-    </div>
+    </React.Fragment>
   );
 }
 
