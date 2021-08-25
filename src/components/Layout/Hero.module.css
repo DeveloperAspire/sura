@@ -3,7 +3,6 @@
       grid-template-columns: 1fr 1fr;
       margin-top: 2rem;
       padding-left: 7rem;
-      /* align-items: center; */
 }
 .hero--description{
       margin-top: 2rem;
@@ -17,6 +16,7 @@
 }
 .text{
       color:hsl(257, 7%, 63%);
+      font-size: 16px;
 }
 .img{
       width: 600px;

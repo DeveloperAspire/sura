@@ -1,0 +1,63 @@
+.container {
+  padding: 10rem 7rem;
+  margin-top: 6rem;
+  background-color: #eff1f7;
+}
+.head {
+  text-align: center;
+  margin: 0 auto;
+  width: 40%;
+}
+.head h1 {
+  color: hsl(255, 11%, 22%);
+}
+.head p {
+  color: hsl(257, 7%, 63%);
+  font-size: 14px;
+  margin-top: 0.5rem;
+}
+.card--container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 5rem;
+}
+.card-wrapper {
+  padding: 3rem 1.5rem 0rem 0rem;
+  position: relative;
+}
+.card {
+  background-color: white;
+  padding: 3rem 0 2rem 2rem;
+  border-radius: 5px;
+}
+.img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: hsl(257, 27%, 26%);
+  padding: 2.5rem;
+  position: absolute;
+  top: 0;
+  z-index: 200;
+}
+.img--one {
+  background-image: url("../../images/icon-brand-recognition.svg");
+}
+.img--two {
+  background-image: url("../../images/icon-detailed-records.svg");
+}
+.img-three{
+      background-image: url('../../images/icon-fully-customizable.svg');
+}
+.card h4 {
+  color: hsl(260, 8%, 14%);
+}
+.card p {
+  margin-top: 0.5rem;
+  font-size: 14px;
+  color: hsl(257, 7%, 63%);
+  padding-right: 2rem;
+}
