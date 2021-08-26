@@ -26,3 +26,7 @@
       font-weight: 700;
       color:white;
 }
+.button:hover{
+      background-color: #5FDCDC;
+      cursor: pointer;
+}

@@ -1,9 +1,11 @@
 import  classes  from './Details.module.css'
 import React from 'react'
+import Result from "./Result";
 
 const Details = ()=> {
   return (
     <section className={classes.container}>
+      <Result />
       <div className={classes.head}>
         <h1> Advanced Statistics</h1>
         <p>

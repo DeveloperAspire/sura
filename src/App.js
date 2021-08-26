@@ -7,12 +7,14 @@ import Quote from './components/Layout/Quote';
 import Footer from './components/Layout/Footer';
 import Input from './components/Forms/Input';
 
+
 function App() {
   return (
     <React.Fragment>
      <Header/>
      <Hero/>
      <Input/>
+     {/* <Result/> */}
      <Details/>
      <Quote/>
      <Footer/>
