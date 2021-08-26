@@ -15,7 +15,7 @@ const Details = ()=> {
       <div className={classes["card--container"]}>
         <div className={classes["card-wrapper"]}>
           <div className={classes.card}>
-            <div className={`${classes.img} ${classes["img--one"]}`}></div>
+            <div className={`${classes.icon} ${classes["icon--one"]}`}></div>
             <h4>Brand Recognition</h4>
             <p>
               Boost your brand recognition with each click. Generic links don’t
@@ -24,9 +24,9 @@ const Details = ()=> {
             </p>
           </div>
         </div>
-        <div className={classes["card-wrapper"]}>
+        <div className={`${classes["card-wrapper"]} ${classes["card--two"]}`}>
           <div className={classes.card}>
-            <div className={`${classes.img} ${classes["img--two"]}`}></div>
+            <div className={`${classes.icon} ${classes["icon--two"]}`}></div>
             <h4>Detailed Records</h4>
             <p>
               Gain insights into who is clicking your links. Knowing when and
@@ -35,9 +35,9 @@ const Details = ()=> {
             </p>
           </div>
         </div>
-        <div className={classes["card-wrapper"]}>
+        <div className={`${classes["card-wrapper"]} ${classes["card--three"]}`}>
           <div className={classes.card}>
-            <div className={`${classes.img} ${classes["img--one"]}`}></div>
+            <div className={`${classes.icon} ${classes["icon--three"]}`}></div>
             <h4>Fully Customizable</h4>
             <p>
               Improve brand awareness and content discoverability through

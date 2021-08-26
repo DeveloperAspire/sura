@@ -30,7 +30,13 @@
   padding: 3rem 0 2rem 2rem;
   border-radius: 5px;
 }
-.img {
+.card--two{
+   margin-top: 2rem;
+}
+.card--three{
+  margin-top: 4rem;
+}
+.icon {
   background-position: center;
   background-repeat: no-repeat;
   background-size: auto;
@@ -43,13 +49,13 @@
   top: 0;
   z-index: 200;
 }
-.img--one {
+.icon--one {
   background-image: url("../../images/icon-brand-recognition.svg");
 }
-.img--two {
+.icon--two {
   background-image: url("../../images/icon-detailed-records.svg");
 }
-.img-three{
+.icon--three{
       background-image: url('../../images/icon-fully-customizable.svg');
 }
 .card h4 {
