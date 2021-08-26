@@ -8,6 +8,10 @@ const ResultItem = ({originalLink, shortLink})=> {
   const copyToClipBoard = ()=> {
     navigator.clipboard.writeText(shortLink)
     setCopied(true)
+
+    setTimeout(()=>{
+      setCopied(false)
+    },2000)
   }
   const buttonClass = copied ? classes.copied : ''
       return (
