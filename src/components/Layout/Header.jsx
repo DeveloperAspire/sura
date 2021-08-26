@@ -7,7 +7,7 @@ const Header = ()=> {
       return (
         <nav className={classes.navigation}>
           <div className={classes.info}>
-            <h1>Shortex</h1>
+            <h1>Sura</h1>
             <ul>
               <li>Features</li>
               <li>Pricing</li>

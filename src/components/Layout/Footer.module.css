@@ -1,0 +1,22 @@
+footer{
+      background-color:  hsl(260, 8%, 14%);
+      color:white;
+      padding:4rem 7rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      align-items: start;
+}
+ul{
+      list-style-type: none;
+}
+ul li{
+      font-size: 14px;
+      margin-bottom: 0.5rem;
+}
+ul li:first-child{
+      font-weight: 700;
+      margin-bottom: 1rem;
+}
+img{
+      margin-right: 1rem;
+}
