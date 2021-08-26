@@ -5,12 +5,14 @@ import Details from './components/Layout/Details'
 import './App.css';
 import Quote from './components/Layout/Quote';
 import Footer from './components/Layout/Footer';
+import Input from './components/Forms/Input';
 
 function App() {
   return (
     <React.Fragment>
      <Header/>
      <Hero/>
+     <Input/>
      <Details/>
      <Quote/>
      <Footer/>

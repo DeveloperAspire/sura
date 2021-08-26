@@ -1,0 +1,55 @@
+.form--background {
+  background-image: url("../../images/bg-shorten-desktop.svg");
+  padding: 2rem 4rem;
+  background-color: hsl(257, 27%, 26%);
+  background-repeat: no-repeat;
+  background-size: auto;
+  position: absolute;
+  width: 80%;
+  border-radius: 0.5rem;
+  transform: translateY(50%) translateX(10%);
+  
+}
+form{
+display: grid;
+  grid-template-columns: 80% 20%;
+}
+input {
+  font-family: 'Poppins', sans-serif;
+  width: 97%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: none;
+}
+input::placeholder{
+      color:hsl(0, 0%, 75%);
+      font-weight: 500;
+}
+input:focus{
+      outline:none;
+}
+input.error{
+      border:2px solid  hsl(0, 87%, 67%);
+}
+p.error{
+      color: hsl(0, 87%, 67%);
+      font-style: italic;
+      font-size: 14px;
+      font-weight: 200;
+}
+
+.button {
+  border: none;
+  border-radius: 0.5rem;
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-size: 14px;
+  background-color: transparent;
+  background-color: hsl(180, 66%, 49%);
+  font-weight: 700;
+  color: white;
+}
+.button:hover{
+      background-color: #5FDCDC;
+      cursor: pointer;
+}
