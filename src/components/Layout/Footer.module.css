@@ -20,3 +20,7 @@ ul li:first-child{
 img{
       margin-right: 1rem;
 }
+ul li:hover{
+      color:hsl(180, 66%, 49%);
+      cursor: pointer;
+}

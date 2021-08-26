@@ -1,13 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
 import classes from './ResultItem.module.css'
 
-const ResultItem = ()=> {
+const ResultItem = ({originalLink, shortLink})=> {
+  const [copied, setCopied] = useState(false)
+
+
+  const copyToClipBoard = ()=> {
+    navigator.clipboard.writeText(shortLink)
+    setCopied(true)
+  }
+  const buttonClass = copied ? classes.copied : ''
       return (
         <div className={classes.container}>
-          <p>https://www.google.com</p>
+          <p>{originalLink}</p>
           <div>
-            <a href="https://www.google.com" className={classes.link}>https://www.google.com</a>
-            <button className={classes.button}>Copy</button>
+            <span className={classes.link}>{shortLink}</span>
+            <button className={buttonClass} onClick={copyToClipBoard}>{copied ? 'Copied' : 'Copy'}</button>
           </div>
         </div>
       );

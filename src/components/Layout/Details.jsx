@@ -2,10 +2,10 @@ import  classes  from './Details.module.css'
 import React from 'react'
 import Result from "./Result";
 
-const Details = ()=> {
+const Details = ({result})=> {
   return (
     <section className={classes.container}>
-      <Result />
+      <Result result={result}/>
       <div className={classes.head}>
         <h1> Advanced Statistics</h1>
         <p>

@@ -12,7 +12,7 @@
       color:#5FDCDC;
       text-decoration: none;
 }
-.button{
+button{
       border:none;
       display: inline-block;
       padding:.5rem 1.5rem;
@@ -24,7 +24,10 @@
       color:white;
       margin-left: 1rem;
 }
-.button:hover{
+button:hover{
       background-color: #5FDCDC;
       cursor: pointer;
+}
+button.copied{
+      background-color: #3B3054;
 }
