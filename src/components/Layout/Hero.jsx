@@ -5,6 +5,7 @@ import image from '../../images/illustration-working.svg'
 
 const Hero = () => {
  return (
+   <>
    <main className={classes.hero}>
      <div className={classes["hero--description"]}>
        <h1>More than just shorter links</h1>
@@ -16,6 +17,7 @@ const Hero = () => {
      </div>
      <img src={image} alt="" className={classes.img} />
    </main>
+   </>
  );
 }
 

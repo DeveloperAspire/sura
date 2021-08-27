@@ -73,3 +73,40 @@
 .loader{
   text-align: center;
 }
+
+
+@media (max-width:540px) {
+  .head {
+  text-align: center;
+  margin: 0 auto;
+  width:100%;
+}
+  .card--container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.container {
+  padding: 10rem 1rem;
+  margin-top: 6rem;
+  background-color: #eff1f7;
+}
+.container.valid{
+  padding:6rem 1rem
+}
+.card-wrapper {
+  padding: 3rem 0rem 0rem 0rem;
+  position: relative;
+}
+.card {
+  text-align: center;
+  padding-top: 4rem;
+}
+.icon {
+  left:35%;
+
+}
+.loader{
+  text-align: center;
+  margin-top: 1rem;
+}
+}

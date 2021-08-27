@@ -30,3 +30,8 @@
       background-color: #5FDCDC;
       cursor: pointer;
 }
+@media (max-width:540px){
+      .quote{
+              padding: 4rem 2rem;
+      }
+}

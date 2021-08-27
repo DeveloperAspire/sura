@@ -41,3 +41,31 @@
       background-color: #5FDCDC;
       cursor: pointer;
 }
+
+
+@media (max-width:540px){
+      .hero{
+      display: grid;
+      grid-template-columns: 1fr;
+      margin-top: 2rem;
+      padding-left: 1rem;
+      padding-bottom: 4rem;
+}
+.hero--description{
+      margin-top: 2rem;
+      padding:0 1rem;
+      text-align: center;
+}
+.hero--description h1{
+      font-size: 2.4rem;
+}
+      .img{
+      width: 300px;
+      margin-top: 1rem;
+      order:-1;
+}
+.button{
+     
+      padding:.7rem 3rem;
+}
+}

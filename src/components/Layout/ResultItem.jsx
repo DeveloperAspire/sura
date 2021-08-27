@@ -4,7 +4,7 @@ import classes from './ResultItem.module.css'
 const ResultItem = ({originalLink, shortLink})=> {
   const [copied, setCopied] = useState(false)
 
-
+const shortenLink = `https://${shortLink}`
   const copyToClipBoard = ()=> {
     navigator.clipboard.writeText(shortLink)
     setCopied(true)
@@ -17,8 +17,8 @@ const ResultItem = ({originalLink, shortLink})=> {
       return (
         <div className={classes.container}>
           <p>{originalLink}</p>
-          <div>
-            <span className={classes.link}>{shortLink}</span>
+          <div className={classes.result}>
+            <span className={classes.link}>{shortenLink}</span>
             <button className={buttonClass} onClick={copyToClipBoard}>{copied ? 'Copied' : 'Copy'}</button>
           </div>
         </div>

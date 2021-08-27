@@ -24,3 +24,19 @@ ul li:hover{
       color:hsl(180, 66%, 49%);
       cursor: pointer;
 }
+@media (max-width:540px){
+      footer{
+      padding:4rem 4rem;
+      text-align: center;
+      grid-template-columns: 1fr;
+}
+ul li:first-child{
+      font-weight: 700;
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+}
+img{
+      margin-right: 1rem;
+      margin-top: 1rem;
+}
+}

@@ -31,3 +31,31 @@ button:hover{
 button.copied{
       background-color: #3B3054;
 }
+
+@media (max-width:540px){
+      .container{
+      background-color: white;
+       margin: 0 auto 1rem auto;
+      padding:.5rem 1rem;
+      flex-direction: column;
+        align-items: flex-start;
+        width:87%;
+       
+}
+.container p{
+      border-bottom: 1px solid hsl(0, 0%, 75%);
+}
+.link{
+      margin-top: 1rem;
+      display: block;
+}
+button{
+      border:none;
+      display: block;
+      width:100%;
+       margin:.5rem auto 0 auto;
+}
+.result{
+      width: 100%;
+}
+}
