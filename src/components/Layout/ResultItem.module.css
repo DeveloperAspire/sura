@@ -44,6 +44,7 @@ button.copied{
 }
 .container p{
       border-bottom: 1px solid hsl(0, 0%, 75%);
+      padding-right: .5rem;
 }
 .link{
       margin-top: 1rem;
