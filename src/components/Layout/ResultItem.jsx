@@ -6,7 +6,7 @@ const ResultItem = ({originalLink, shortLink})=> {
 
 const shortenLink = `https://${shortLink}`
   const copyToClipBoard = ()=> {
-    navigator.clipboard.writeText(shortLink)
+    navigator.clipboard.writeText(shortenLink)
     setCopied(true)
 
     setTimeout(()=>{
