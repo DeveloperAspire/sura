@@ -3,6 +3,9 @@
   margin-top: 6rem;
   background-color: #eff1f7;
 }
+.container.valid{
+  padding:6rem 7rem
+}
 .head {
   text-align: center;
   margin: 0 auto;
@@ -66,4 +69,7 @@
   font-size: 14px;
   color: hsl(257, 7%, 63%);
   padding-right: 2rem;
+}
+.loader{
+  text-align: center;
 }

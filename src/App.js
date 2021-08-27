@@ -10,15 +10,15 @@ import Input from './components/Forms/Input';
 
 function App() {
   const [links, setLinks] = useState([])
+  const [stored, setStored] = useState(false)
+  const [ loading, setLoading] = useState(false)
 
 useEffect(()=> {
 fetchFromLocalStorage()
-}, [])
+}, [stored])
 
   const shortenLinkHandler = async (link)=> {
-    const transformedData = []
-    const hi = `https://api.shrtco.de/v2/shorten?url=${link}`;
-    console.log(hi)
+    setLoading(true)
     const response = await fetch(
       `https://api.shrtco.de/v2/shorten?url=${link}`
     );
@@ -30,22 +30,43 @@ fetchFromLocalStorage()
       shortenLink: data.result.short_link
 
     }
-  transformedData.push(result)
-  console.log(transformedData)
-  setLinks(transformedData)
+     storeToLocalStorage(result)
+     setLoading(false)
+  }
+  const storeToLocalStorage = (newLinkList)=> {
+   
+       let linkList = []
+
+       if(localStorage.getItem('Links') === null){
+         linkList = []
+       }else {
+        linkList = JSON.parse(localStorage.getItem('Links'))
+       }
+       linkList.push(newLinkList)
+
+      localStorage.setItem("Links", JSON.stringify(linkList));
+      setStored(true)
   }
   const fetchFromLocalStorage = ()=> {
+    const linkList = JSON.parse(localStorage.getItem("Links"));
+    if(linkList === null){
+      setLinks([]);
+
+    }else{
+       setLinks(linkList);
+    }
+   
+    console.log('hello')
 
   }
   return (
     <React.Fragment>
-     <Header/>
-     <Hero/>
-     <Input shortenLink={shortenLinkHandler}/>
-     <Details result={links}/>
-     <Quote/>
-     <Footer/>
-      
+      <Header />
+      <Hero />
+      <Input shortenLink={shortenLinkHandler} loading={loading} />
+      <Details result={links} loading={loading} />
+      <Quote />
+      <Footer />
     </React.Fragment>
   );
 }

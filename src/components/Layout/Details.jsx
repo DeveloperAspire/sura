@@ -2,10 +2,20 @@ import  classes  from './Details.module.css'
 import React from 'react'
 import Result from "./Result";
 
-const Details = ({result})=> {
+const Details = ({result, loading})=> {
+
+  const resultValid = result.length > 0
+  const containerClass = resultValid ? `${classes.container} ${classes.valid}` : classes.container
   return (
-    <section className={classes.container}>
-      <Result result={result}/>
+    <section className={containerClass}>
+      {loading && (
+        <div>
+          <p className={classes.loader}>Shortening your link, please wait...</p>
+        </div>
+      )}
+
+      <Result result={result} />
+
       <div className={classes.head}>
         <h1> Advanced Statistics</h1>
         <p>

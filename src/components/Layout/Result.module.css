@@ -1,5 +1,6 @@
 .result--container{
       background-color: transparent;
-      transform: translateY(-30%);
-      margin:0 auto;
+      margin:1rem auto;
+      margin-bottom: 4rem;
+
 }

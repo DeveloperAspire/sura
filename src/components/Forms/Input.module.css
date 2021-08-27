@@ -53,3 +53,7 @@ p.error{
       background-color: #5FDCDC;
       cursor: pointer;
 }
+.button:disabled{
+      background-color: #5FDCDC;
+      cursor:not-allowed;
+}
