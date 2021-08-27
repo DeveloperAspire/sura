@@ -1,3 +1,30 @@
+# Sura
+![](src/images/Sura.png)
+
+Sura is a URL shortner application, which simply means an application that takes an valid URL as an input and gives you the shortest form of that URL.
+
+Sura is built with great user experience, interaction and experience.
+
+Sura design and images were gotten from [FrontendMentor](https://www.frontendmentor.io/)
+
+Sura is also a [FrontendMentor](https://www.frontendmentor.io/) challenge which I completed, you can view the challenge and attempt it [Here](https://www.frontendmentor.io/challenges/url-shortening-api-landing-page-2ce3ob-G)
+
+Sura also has a local memory that keeps track of all URL a user have shortened over time and shows them.
+
+Sura is also responsive on all devices ranging from Desktop, Tablets and smart phones.
+
+This Project is built 100% with ReactJS and CSS, [Shorto](https://shrtco.de/) API was used in this application to send the URL to the server for processing, Local storage served as the local memory to store links any user has shortened.
+
+Sura also depends on an internet connection to work as it is a web application that runs on the browser.
+
+You can view the live application [here](https://suraa.netlify.app/)
+
+Do vist the site and Shorten a URL now!!
+
+If you are a developer and you intend to look into this project and it codes, kindly follow the instruction below to set the project up on your local machine.
+
+Happy Coding!
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
