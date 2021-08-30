@@ -1,10 +1,14 @@
 footer{
+       background-color:  hsl(260, 8%, 14%);
+}
+.container{
       background-color:  hsl(260, 8%, 14%);
       color:white;
       padding:4rem 7rem;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
       align-items: start;
+      justify-content: flex-start;
 }
 ul{
       list-style-type: none;
@@ -24,8 +28,18 @@ ul li:hover{
       color:hsl(180, 66%, 49%);
       cursor: pointer;
 }
+.trademark{
+      text-align: center;
+      padding-bottom: 1rem;
+      color:white;
+      font-size: 16px;
+}
+.trademark a {
+       color:hsl(180, 66%, 49%);
+       text-decoration: none;
+}
 @media (max-width:540px){
-      footer{
+    .container{
       padding:4rem 4rem;
       text-align: center;
       grid-template-columns: 1fr;
